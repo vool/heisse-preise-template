@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "husky install",
     "format": "npx prettier --write .",
-    "clean": "rimraf site/build && rimfar server/build",
+    "clean": "rimraf site/build && rimraf server/build",
     "build:css": "npx tailwindcss -i site/styles.css -o site/styles-bundle.css",
     "build:css-txt": "npx tailwindcss -i site/styles.css -o site/styles-bundle.css.txt",
     "build:site": "node ./esbuild.site.mjs",
