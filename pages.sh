@@ -13,6 +13,7 @@ npm run build
 set -e
 cp -r site/build docs
 pushd docs
+ls -la
 git add *
 git commit -am "Updated $(date +'%Y-%m-%d')"
 git push
